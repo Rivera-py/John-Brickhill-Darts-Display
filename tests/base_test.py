@@ -3,7 +3,7 @@ from darts_dashboard import base
 
 
 def test_base():
-    return 0
+    assert 0
 
 
 def test_run():
