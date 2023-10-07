@@ -1,5 +1,5 @@
 # Placeholder
-from project_package import base
+from darts_dashboard import base
 
 
 def test_base():
