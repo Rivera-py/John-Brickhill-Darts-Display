@@ -1,5 +1,5 @@
 name: test-resources
-run-name: Testing ${{ github.base.ref }} Resources For Errors
+run-name: Testing ${{ github.base_ref }} Resources For Errors
 on: [push]
 jobs:
   test-python-resources:
