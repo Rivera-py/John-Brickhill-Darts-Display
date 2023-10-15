@@ -4,6 +4,7 @@ import os
 import sys
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.oauth2.credentials import Credentials
+from google.auth.transport.requests import Request
 
 
 class AuthenticationHandler():
@@ -38,8 +39,7 @@ class AuthenticationHandler():
 
     def refresh_token(self):
         ''' Refresh existing token '''
-        # TODO: Add token refresh code.
-        sys.exit("Token expired, requires refresh.")
+        self.credentials.refresh(Request())
 
     def is_credential_file(self):
         ''' Test credential file present '''
