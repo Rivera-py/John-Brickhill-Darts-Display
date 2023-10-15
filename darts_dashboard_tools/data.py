@@ -22,21 +22,21 @@ class DataHandler():
         ''' Pull data via API '''
         output = self.service.spreadsheets().values().get(spreadsheetId=self.sheet_id, range=self.sheet_range).execute()
         self.data = output.get("values", [])
-    
-    def is_input_not_empty(self): # Change these is functions to output boolean and exit on validate function
+
+    def is_input_not_empty(self):  # Change these is functions to output boolean and exit on validate function
         ''' Verify data exists '''
         if not self.data:
             sys.exit("No data found.")
-    
+
     def is_input_correct_format(self):
         ''' Verify input data is correct schema '''
         print("TODO: Add schema functionality.")
-    
+
     def validate_input_data(self):
         ''' Validate input data '''
         self.is_input_not_empty()
         self.is_input_correct_format()
-    
+
     def scan_input_data(self) -> list:
         ''' Pull and validate input data '''
         self.get_input_data()
