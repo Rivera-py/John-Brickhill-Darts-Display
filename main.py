@@ -1,7 +1,7 @@
 # Control plane for darts dashboard app
 
-# import darts_dashboard_tools
+from darts_dashboard_tools import authentication
 
 
 if __name__ == '__main__':
-    print('TODO: Add process code')
+    authentication.AuthenticationHandler()

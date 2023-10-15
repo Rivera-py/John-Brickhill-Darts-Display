@@ -399,3 +399,6 @@ FodyWeavers.xsd
 
 # Syntax and Logic Test Folder
 Test/**
+
+# Hide generated token file
+token.json
