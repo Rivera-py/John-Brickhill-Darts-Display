@@ -8,7 +8,7 @@ from googleapiclient.discovery import build
 class DataHandler():
     ''' Google Sheets data handler '''
 
-    def __init__(self, sheet_id: str, api_version: str = "v4", sheet_range: str = "ORIGINAL!A3:A10"):
+    def __init__(self, sheet_id: str, api_version: str = "v4", sheet_range: str = "ORIGINAL!A2:X67"):
         ''' Instantiate data handler '''
         self.sheet_id = sheet_id
         self.sheet_range = sheet_range
